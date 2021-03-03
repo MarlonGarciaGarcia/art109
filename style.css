@@ -1,0 +1,62 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: black;
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, Sans-Serif;
+}
+
+h1{
+  color:white;
+  text-align: center;
+}
+
+h2 {
+  color:white;
+  text-align: center;
+  size: 10px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+.row {
+  margin: 0 -15px;
+}
+.row::after {
+  content: "";
+  display:table;
+  clear: both;
+}
+.col {
+  padding: 0 15px;
+  float: left;
+  width: 100%;
+}
+.col-phone-6 {
+  width: 50%;
+}
+
+/* tablet */
+@media (min-width: 500px) {
+  .container {
+    width: 700px;
+    margin: 0 auto;
+
+  }
+  .col-tablet-4 {
+    width: 33.33%;
+  }
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .container {
+    width: 1170px;
+  }
+  .col-desktop-3 {
+    width: 25%;
+  }
+}
